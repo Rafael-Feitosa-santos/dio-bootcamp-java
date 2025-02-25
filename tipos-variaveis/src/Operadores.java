@@ -18,13 +18,13 @@ public class Operadores {
 
         // String resultado = "";
         // if(a==b)
-        //     resultado = "verdadeiro";
+        // resultado = "verdadeiro";
         // else
-        //     resultado = "falso";
+        // resultado = "falso";
 
         // System.err.println(resultado);
-        
-        String resultado = a == b ? "verdadeiro":"falso";
+
+        String resultado = a == b ? "verdadeiro" : "falso";
 
     }
 }
