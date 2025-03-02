@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AboutMeTryCatch",
+            "request": "launch",
+            "mainClass": "AboutMeTryCatch",
+            "projectName": "java-terminal_dd9455b6"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
