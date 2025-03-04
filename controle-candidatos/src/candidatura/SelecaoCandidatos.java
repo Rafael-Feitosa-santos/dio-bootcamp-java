@@ -20,7 +20,9 @@ public class SelecaoCandidatos {
             String candidato = candidatos[candidatoAtual];
             double salarioPretendido = valorPretendido();
 
-            System.out.println("O candidato " + candidato + " solicitou esse valor de salário " + salarioPretendido);
+            String salarioFormatado = String.format("%.2f", salarioPretendido);
+
+            System.out.println("O candidato " + candidato + " solicitou esse valor de salário " + salarioFormatado);
 
             if (salarioBase >= salarioPretendido) {
                 System.out.println("O candido " + candidato + " foi selecionado para a vaga");
