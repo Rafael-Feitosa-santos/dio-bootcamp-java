@@ -5,9 +5,10 @@ public class Escola {
 
         Aluno aluno = new Aluno();
 
-        aluno.nome = "Rafael";
-        aluno.idade = 33;
+        aluno.setNome("Rafael Feitosa");
+        aluno.setIdade(33);
+        aluno.setSexo("Masculino");
 
-        System.out.println("O aluno " + aluno.nome + " tem a idade " + aluno.idade);
+        System.out.println(String.format("O aluno %s tem a idade %d anos, ele é do genero: %s", aluno.getNome(), aluno.getIdade(), aluno.getSexo()));
     }
 }
