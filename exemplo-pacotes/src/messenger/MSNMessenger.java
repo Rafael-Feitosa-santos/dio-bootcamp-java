@@ -1,23 +1,15 @@
 package messenger;
 
-// Aplicando o encapsulamento
-public class MSNMessenger {
+// Aplicando a herança
+public class MSNMessenger extends ServicoMensagemInstantanea {
 
+    @Override
     public void enviarMensagem() {
-        validarConectadoInternet();
-        System.out.println("Enviando mensagem..");
-        salvarHistoricoMensagem();
+        System.out.println("Enviando mensagem pelo MSN Messenger..");
     }
 
+    @Override
     public void receberMensagem() {
-        System.out.println("Recebendo mensagem..");
-    }
-
-    private void validarConectadoInternet() {
-        System.out.println("Validando se está conectado a internet");
-    }
-
-    private void salvarHistoricoMensagem() {
-        System.out.println("Salvando o histórico da mensagem.");
+        System.out.println("Recebendo mensagem pelo MSN Messenger..");
     }
 }
