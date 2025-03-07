@@ -1,29 +1,32 @@
 package messenger;
 
+import messenger.apps.FacebookMessenger;
+import messenger.apps.MSNMessenger;
+import messenger.apps.ServicoMensagemInstantanea;
+import messenger.apps.TelegramMessenger;
 
+// Aplicando o polimorfismo.
 public class Computador {
     public static void main(String[] args) {
-        //abrindo MSN Messenger
-        MSNMessenger msn = new MSNMessenger();
 
-        System.out.println("MSN");
-        msn.enviarMensagem();
-        msn.receberMensagem();
+        ServicoMensagemInstantanea smi = null;
 
-        System.out.println("----------------------");
+        // Não sabe qual app, mas qualquer um deverá enviar e receber mensagem.
+        String appEscolhido = "msn";
+        try {
+            if (appEscolhido.equals("msn")) {
+                smi = new MSNMessenger();
+            } else if (appEscolhido.equals("facebook")) {
+                smi = new FacebookMessenger();
+            } else if (appEscolhido.equals("telegram")) {
+                smi = new TelegramMessenger();
+            } else {
+            }
 
-        FacebookMessenger facebook = new FacebookMessenger();
-
-        System.out.println("FACEBOOK");
-        facebook.enviarMensagem();
-        facebook.receberMensagem();
-
-        System.out.println("----------------------");
-
-        TelegramMessenger telegram = new TelegramMessenger();
-
-        System.out.println("TELEGRAM");
-        telegram.enviarMensagem();
-        telegram.receberMensagem();
+            smi.enviarMensagem();
+            smi.receberMensagem();
+        } catch (NullPointerException e) {
+            System.out.println("Opção inexistente");
+        }
     }
 }
