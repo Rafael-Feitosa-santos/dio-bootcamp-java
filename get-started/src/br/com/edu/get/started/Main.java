@@ -1,5 +1,4 @@
-import br.com.edu.get.started.MaquinaBanho;
-import br.com.edu.get.started.Pet;
+package br.com.edu.get.started;
 
 import java.util.Scanner;
 
