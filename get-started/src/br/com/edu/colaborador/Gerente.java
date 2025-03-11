@@ -1,12 +1,17 @@
 package br.com.edu.colaborador;
 
-public non-sealed class Gerente extends Colaborador {
+public non-sealed class Gerente extends Colaborador{
 
     private String login;
     private String senha;
     private double comissao;
 
     public Gerente() {
+    }
+
+    @Override
+    public String getCodigo() {
+        return "MN" + super.getCodigo();
     }
 
     public String getLogin() {

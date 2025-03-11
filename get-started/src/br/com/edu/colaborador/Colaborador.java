@@ -11,8 +11,8 @@ public sealed abstract class Colaborador permits Gerente, Vendedor {
     public Colaborador() {
     }
 
-    public Long getCodigo() {
-        return codigo;
+    public String getCodigo() {
+        return String.valueOf(codigo); // assumindo que codigo é um atributo Long
     }
 
     public void setCodigo(Long codigo) {
