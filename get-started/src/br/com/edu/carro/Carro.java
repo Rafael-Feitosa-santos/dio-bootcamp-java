@@ -82,7 +82,7 @@ public class Carro {
     }
 
     public void verificarVelocidade() {
-        System.out.printf("A velocidade atual do carro é %d km/h", velocidade);
+        System.out.printf("A velocidade atual do carro é %d km/h\n", velocidade);
     }
 
     public void trocarMarcha(int novaMarcha) {

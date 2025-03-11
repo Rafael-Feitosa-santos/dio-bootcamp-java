@@ -9,7 +9,7 @@ public class Main {
 
         while (true) {
             System.out.println("=====================");
-            System.out.printf("%10s%n", "Menu");
+            System.out.printf("%12s%n", "Menu");
             System.out.println("=====================");
             System.out.println("[1] - Ligar o carro.");
             System.out.println("[2] - Desligar o carro.");
