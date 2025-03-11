@@ -19,9 +19,10 @@ public class Main {
             System.out.println("[6] - Virar para a direita.");
             System.out.println("[7] - Verificar a velocidade.");
             System.out.println("[8] - Trocar marcha.");
-            System.out.println("[9] - Sair.");
+            System.out.println("[9] - Reduzir marcha.");
+            System.out.println("[10] - Sair.");
 
-            System.out.println("Escolha uma opção: ");
+            System.out.print("Escolha uma opção: ");
             int op = scanner.nextInt();
 
             switch (op) {
@@ -45,12 +46,18 @@ public class Main {
                     break;
                 case 7:
                     carro.verificarVelocidade();
+                    break;
                 case 8:
-                    System.out.println("Informe a marcha (0 a 6): ");
+                    System.out.print("Informe a marcha (0 a 6): ");
                     int marcha = scanner.nextInt();
                     carro.trocarMarcha(marcha);
                     break;
                 case 9:
+                    System.out.print("Informe a marcha (0 a 6): ");
+                    int reduzir = scanner.nextInt();
+                    carro.reduzirMarcha(reduzir);
+                    break;
+                case 10:
                     System.out.println("Saindo..");
                     scanner.close();
                     return;
